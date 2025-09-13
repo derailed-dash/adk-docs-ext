@@ -8,8 +8,7 @@ Author: Darren Lester
 
 ## How It Works
 
-This extension uses a MCP server to provide the Gemini model with up-to-date information about the ADK. The documentation content is sourced from the `llms.txt` file in the [official ADK-Docs](https://github.com/google/adk-docs) repo. 
-This file is effectively a sitemap of the documentation available in that repo.
+This Gemini CLI extension uses the [MCP LLMS-TXT Doc Server](https://pypi.org/project/mcpdoc/) to provide the Gemini model with up-to-date information about the ADK. The documentation content is sourced from the `llms.txt` file in the [official ADK-Docs](https://github.com/google/adk-docs) repo. This file is effectively a sitemap of the documentation available in that repo.
 
 The extension's `GEMINI.md` file provides instructions to the Gemini model, guiding it to use the tools provided by this extension when answering questions about the ADK.
 
@@ -23,7 +22,7 @@ This extension empowers Gemini CLI to provide accurate and current information a
 
 ## Gemini CLI installation
 
-You can clone the repository directly into your Gemini CLI extensions directory. Choose between a global installation (available to your user everywhere) or a local installation (for the current workspace/project).
+To install the extension, simply clone the repository directly into your Gemini CLI extensions directory. Choose between a global installation (available to your user everywhere) or a local installation (for the current workspace/project).
 
 ### Global Installation
 ```bash
@@ -37,7 +36,7 @@ mkdir -p ./.gemini/extensions
 git clone https://github.com/derailed-dash/gemini-docs-ext.git ./.gemini/extensions/adk-docs-ext
 ```
 
-Gemini CLI will automatically load the extension on startup.
+Gemini CLI will automatically load the extension on startup and will then use the relevant tools to answer any questions relating to the ADK.
 
 ## Acknowledgements
 
