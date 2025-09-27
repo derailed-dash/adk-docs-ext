@@ -20,23 +20,54 @@ This extension empowers Gemini CLI to provide accurate and current information a
 *   Assisting with development tasks related to the ADK.
 *   Ensuring that the information provided by the Gemini CLI is consistent with the latest ADK documentation.
 
-## Gemini CLI installation
+## Extension Installation into Gemini CLI
 
-To install the extension, simply clone the repository directly into your Gemini CLI extensions directory. Choose between a global installation (available to your user everywhere) or a local installation (for the current workspace/project).
+The easiest way to install this extension is with this command:
 
-### Global Installation
+```bash
+gemini extensions install https://github.com/derailed-dash/adk-docs-ext
+```
+
+The command will respond with: 
+
+`Extension "adk-docs-ext" installed successfully and enabled.`
+
+Alternatively, you can clone this repo directly into your `extensions` folder.
+
+For global installation:
+
 ```bash
 mkdir -p ~/.gemini/extensions
 git clone https://github.com/derailed-dash/adk-docs-ext.git ~/.gemini/extensions/adk-docs-ext
 ```
 
-### Workspace Installation
+For workspace-level installation:
+
 ```bash
 mkdir -p ./.gemini/extensions
 git clone https://github.com/derailed-dash/gemini-docs-ext.git ./.gemini/extensions/adk-docs-ext
 ```
 
 Gemini CLI will automatically load the extension on startup and will then use the relevant tools to answer any questions relating to the ADK.
+
+### Using an Alternative `llms.txt` Path
+
+At this point in time, the `llms.txt` in the [ADK-Docs repo](https://github.com/google/adk-docs) isn't a proper site map with links and link summaries. Until this is resolved, you may prefer to specify a local location for your `llms.txt`. I have created a more useful `llms.txt` in the `sample_llms_txt` folder.
+
+To use it, amend the `gemini-extension.json` and replace this:
+
+```json
+    "--urls",
+    "https://raw.githubusercontent.com/google/adk-docs/main/llms.txt",
+```
+
+with this:
+
+```json
+    "--urls",
+    "Local_ADK_Docs:/path/to/local/llms.txt",
+```
+
 
 ## Acknowledgements
 

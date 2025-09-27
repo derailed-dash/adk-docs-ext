@@ -9,7 +9,9 @@
         "mcpdoc",
         "mcpdoc",
         "--urls",
-        "/home/darren/localdev/gcp/adk-docs/dazbo-adk-llms.txt",
+        "https://raw.githubusercontent.com/google/adk-docs/main/llms.txt",
+        "--allowed-domains",
+        "*",
         "--transport",
         "stdio"
       ]
