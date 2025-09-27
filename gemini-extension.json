@@ -9,7 +9,7 @@
         "mcpdoc",
         "mcpdoc",
         "--urls",
-        "https://raw.githubusercontent.com/google/adk-docs/main/llms.txt",
+        "/home/darren/localdev/gcp/adk-docs/dazbo-adk-llms.txt",
         "--transport",
         "stdio"
       ]
