@@ -68,6 +68,32 @@ with this:
     "Local_ADK_Docs:/path/to/local/llms.txt",
 ```
 
+E.g. if you're using the provided sample:
+
+```json
+{
+  "name": "adk-docs-ext",
+  "version": "1.0.0",
+  "mcpServers": {
+    "adk-docs-mcp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "mcpdoc",
+        "mcpdoc",
+        "--urls",
+        "Local_ADK_Docs:${extensionPath}/sample_llms_txt/local_adk_docs_llms.txt",
+        "--allowed-domains",
+        "*",
+        "--transport",
+        "stdio"
+      ]
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
+
+```
 
 ## Acknowledgements
 
