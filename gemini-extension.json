@@ -1,6 +1,6 @@
 {
   "name": "adk-docs-ext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "mcpServers": {
     "adk-docs-mcp": {
       "command": "uvx",
