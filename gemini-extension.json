@@ -1,6 +1,6 @@
 {
   "name": "adk-docs-ext",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "mcpServers": {
     "adk-docs-mcp": {
       "command": "uvx",
@@ -9,7 +9,7 @@
         "mcpdoc",
         "mcpdoc",
         "--urls",
-        "https://raw.githubusercontent.com/google/adk-docs/main/llms.txt",
+        "https://google.github.io/adk-docs/llms.txt",
         "--allowed-domains",
         "*",
         "--transport",
