@@ -45,7 +45,7 @@ For workspace-level installation:
 
 ```bash
 mkdir -p ./.gemini/extensions
-git clone https://github.com/derailed-dash/gemini-docs-ext.git ./.gemini/extensions/adk-docs-ext
+git clone https://github.com/derailed-dash/adk-docs-ext.git ./.gemini/extensions/adk-docs-ext
 ```
 
 Gemini CLI will automatically load the extension on startup and will then use the relevant tools to answer any questions relating to ADK.
