@@ -92,8 +92,9 @@ E.g. if you're using the provided sample:
   },
   "contextFileName": "GEMINI.md"
 }
-
 ```
+
+`${extensionPath}` is a built-in variable that resolves to the directory where the extension is installed.
 
 ## Acknowledgements
 

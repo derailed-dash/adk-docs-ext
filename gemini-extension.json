@@ -9,7 +9,7 @@
         "mcpdoc",
         "mcpdoc",
         "--urls",
-        "https://google.github.io/adk-docs/llms.txt",
+        "https://adk.dev/llms.txt",
         "--allowed-domains",
         "*",
         "--transport",
