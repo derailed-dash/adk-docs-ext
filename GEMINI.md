@@ -18,5 +18,5 @@ All knowledge regarding ADK MUST be retrieved or verified using the `adk-docs-mc
 - **Always Verify**: Even for familiar concepts, fetch the relevant doc page to ensure you have the latest syntax, best practices, and model support details.
 - **Citations**: Always mention the documentation source or specific page URL when providing technical details or code snippets.
 - **Code Quality**: Ensure all code examples follow the patterns established in the ADK documentation (e.g., using `async def`, proper tool registration, and session management).
-- **Off-site Content**: If the documentation links to external resources like GitHub repositories or raw code files, use local tools (e.g., `curl`) to fetch them directly for the most current version.
+- **Off-site Content**: If the documentation links to external resources like GitHub repositories or raw code files, use the `fetch_docs` tool (or local tools like `curl` if available) to fetch them directly for the most current version.
 - **Missing Information**: If a feature or API is not found in the documentation, explicitly state this rather than making assumptions.
